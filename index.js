@@ -84,7 +84,7 @@ function generate(options) {
 
           tok.seen = seen[tok.content];
           tok.slug = slugify(tok.content, opts, tok);
-          res.json.push(utils.pick(tok, ['content', 'slug', 'lvl', 'i', 'seen']));
+          res.json.push(utils.pick(tok, ['content', 'slug', 'lvl', 'i', 'seen', 'lines']));
           result.push(linkify(tok, opts));
         }
       }
